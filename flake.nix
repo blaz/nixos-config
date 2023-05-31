@@ -33,7 +33,7 @@
     };
 
     # Other packages
-    zig.url = "github:black/zig-overlay";
+    zig.url = "github:mitchellh/zig-overlay";
   };
 
   outputs = { self, nixpkgs, home-manager, darwin, ... }@inputs: let
