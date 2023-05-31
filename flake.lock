@@ -232,13 +232,13 @@
       "locked": {
         "lastModified": 1677808960,
         "narHash": "sha256-1bVHRbhHT8Ynfnynd6ZY7hwMeatEV50lAB1/2uB+P48=",
-        "owner": "mitchellh",
+        "owner": "black",
         "repo": "zig-overlay",
         "rev": "128492d8bc5c171bc4b21196a40ff80858f1ac66",
         "type": "github"
       },
       "original": {
-        "owner": "mitchellh",
+        "owner": "black",
         "repo": "zig-overlay",
         "type": "github"
       }

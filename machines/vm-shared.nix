@@ -16,10 +16,10 @@
     # public binary cache that I use for all my derivations. You can keep
     # this, use your own, or toss it. Its typically safe to use a binary cache
     # since the data inside is checksummed.
-    settings = {
-      substituters = ["https://mitchellh-nixos-config.cachix.org"];
-      trusted-public-keys = ["mitchellh-nixos-config.cachix.org-1:bjEbXJyLrL1HZZHBbO4QALnI5faYZppzkU4D2s0G8RQ="];
-    };
+    #settings = {
+    #  substituters = ["https://mitchellh-nixos-config.cachix.org"];
+    #  trusted-public-keys = ["mitchellh-nixos-config.cachix.org-1:bjEbXJyLrL1HZZHBbO4QALnI5faYZppzkU4D2s0G8RQ="];
+    #};
   };
 
   nixpkgs.config.permittedInsecurePackages = [
@@ -154,5 +154,5 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "20.09"; # Did you read the comment?
+  system.stateVersion = "22.11"; # Did you read the comment?
 }

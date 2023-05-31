@@ -15,7 +15,7 @@ let
 in {
   # Home-manager 22.11 requires this be set. We never set it so we have
   # to use the old state version.
-  home.stateVersion = "18.09";
+  home.stateVersion = "22.11";
 
   xdg.enable = true;
 
@@ -120,10 +120,10 @@ in {
 
     config = {
       whitelist = {
-        prefix= [
-          "$HOME/code/go/src/github.com/hashicorp"
-          "$HOME/code/go/src/github.com/mitchellh"
-        ];
+        #prefix= [
+        #  "$HOME/code/go/src/github.com/hashicorp"
+        #  "$HOME/code/go/src/github.com/black"
+        #];
 
         exact = ["$HOME/.envrc"];
       };
@@ -190,7 +190,7 @@ in {
       color.ui = true;
       core.askPass = ""; # needs to be empty to use terminal for ask pass
       credential.helper = "store"; # want to make this more secure
-      github.user = "mitchellh";
+      github.user = "blaz";
       push.default = "tracking";
       init.defaultBranch = "main";
     };
@@ -199,7 +199,7 @@ in {
   programs.go = {
     enable = true;
     goPath = "code/go";
-    goPrivate = [ "github.com/mitchellh" "github.com/hashicorp" "rfc822.mx" ];
+    goPrivate = [ "github.com/blaz" "github.com/hashicorp" "rfc822.mx" ];
   };
 
   programs.tmux = {
